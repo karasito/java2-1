@@ -1,19 +1,20 @@
-public class main {
+public class Main {
     public static void main(String[] args) {
-        int UserAccount = 100; // Счет пользователя
-        int ReceiptOofMoney = 1500; // Поступление денег
+        int userAccount = 100; // Счет пользователя
+        int receiptOofMoney = 1500; // Поступление денег
         int fullBonusAmount = 100; // Полная сумма бонуса
         int numberOfbonuses = 1; // Количество бонусов
-        int check = UserAccount + ReceiptOofMoney; //Проверка поступлений на счет
-        boolean bonus = ReceiptOofMoney > 1000;
-        if (ReceiptOofMoney > 1000) {
-            int FinalBonus = UserAccount + ReceiptOofMoney + (ReceiptOofMoney / 100) * numberOfbonuses;
+        int check = userAccount + receiptOofMoney; //Проверка поступлений на счет
+        boolean bonus = receiptOofMoney > 1000;
+        if (receiptOofMoney > 1000) {
+            int FinalBonus = userAccount + receiptOofMoney + (receiptOofMoney / 100) * numberOfbonuses;
             System.out.println("Счет с бонусами: " + FinalBonus);
 
         } else {
-            int FinalBonus = UserAccount + ReceiptOofMoney;
-            System.out.println("Счет без бонусов: " + FinalBonus);
+            int finalBonus = userAccount + receiptOofMoney;
+            System.out.println("Счет без бонусов: " + finalBonus);
         }
 
 
     }
+}
